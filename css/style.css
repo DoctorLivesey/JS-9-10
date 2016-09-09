@@ -1,0 +1,125 @@
+/*FORM*/
+form{
+	width:700px;
+	height: 200px;
+	margin: 0 auto;
+	
+}
+.wrap{
+	float: left;
+	width: 33%;
+	height: 100%;
+}
+.check{
+	display: block;
+	padding-left: 20px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	background: url(../img/checkbox-sprite.png) no-repeat;
+}
+.check > input{
+	display: none;
+}
+
+/*CHECKBOX*/
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label {
+    cursor: pointer;
+	display: block;
+}
+.cssStyle:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-sprite.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+label:hover:after {
+background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}
+
+/*MENU*/
+.menu{
+	width: 700px;
+	padding: 0;
+	margin: 0 auto;
+	background: #8B795E;
+	border: 1px solid black;
+}
+.menu >li{
+	
+	display: inline-block;
+	width: 19%;
+	height: 55px;
+	text-align: center;
+    line-height: 3em;
+}
+a{
+	text-decoration: none;
+	color: black
+}
+.hoverMenu2{
+	position: absolute;
+	height: 0px;
+	display: none;
+	top: 96px;
+	left: 100%;
+	width: 150px;
+	padding: 0px;
+	background-color: grey;
+	overflow: hidden;
+	border: 1px solid black;
+}
+.hoverMenu2>li{
+	display: block;
+	width: 100%;
+	height: 50px;
+}
+li:hover > a{
+	color: white;
+}
+.hoverMenu1{
+	position: absolute;
+	height: 0;
+	display: none;
+	top: 526px;
+	width: 150px;
+	padding: 0px;
+	background-color: #8B795E;
+    border: 1px solid black;	
+}
+.hoverMenu1 >li{
+	display: block;
+	width: 100%;
+	height: 20%;
+	
+}
+.invisible{
+	display: none;
+}
+.container{
+	height: 1000px;
+}
+/*.menu li:nth-child(3):hover .hoverMenu1 {
+	display: block;
+}
+.hoverMenu1 li:nth-child(3):hover .hoverMenu2{
+	display: block;
+}*/
+
+
+
+
+
